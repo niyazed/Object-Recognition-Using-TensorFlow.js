@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <main>
+            <div class="container mt-5">
+                <div class="col-5">
+                    <h1>TensorFl<small><i class="em em-apple col-1 mb-3"></i></small>w<small class="text-muted">.js</small></h1>
+                    <h6>
+                        Classify with Javascript
+                    </h6>
+                    
+                    <div class="progress progress-bar progress-bar-striped progress-bar-animated mb-4">Loading Model</div>
+                    <!-- <p class="lead"></p> -->
+                </div>
+            
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <input id="image-selector" class="form-control border-0" type="file">
+                    </div>
+                    <div class="col-6">
+                        <button id="predict-button" class="btn btn-primary float-right">Predict</button>
+                    </div>      
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="ml-3">Predictions</h2>
+                        <br>
+                        <ol id="prediction-list"></ol>
+                    </div>
+
+                    <div class="col-6">
+                        <h2 class="ml-3">Image</h2>
+                        <br>
+                        <img id="selected-image" class="ml-3" src="" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.14.1/dist/tf.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script> -->
+        <script src="imagenet_classes.js"></script>
+        <script src="predict.js"></script>  
+    </body>
+</html>
