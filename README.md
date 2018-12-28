@@ -3,7 +3,7 @@ Classifier | TensorFlow.js | MobileNet
 ### Requirment
   - node.js
 
-In the local-server directory, you can run:
+In the server directory, you can run:
 
 ### `node server.js`
 
