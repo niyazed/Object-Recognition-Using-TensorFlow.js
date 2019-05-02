@@ -1,6 +1,6 @@
 Classifier | TensorFlow.js | MobileNet
 
-### Requirment
+### Requirement
   - node.js
 
 In the server directory, you can run:
